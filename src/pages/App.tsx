@@ -1,4 +1,5 @@
 import { HeaderBar } from "../components/HeaderBar"
+import { HeaderMain } from "../components/HeaderMain"
 
 function App() {
 
@@ -8,8 +9,9 @@ function App() {
 
       <header>
 
-        <div className="widthContainer">
+        <div className="widthContainerHeader">
           <HeaderBar />
+          <HeaderMain />
         </div>
 
       </header>

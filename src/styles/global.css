@@ -56,11 +56,14 @@ header::before{
     opacity: 0.1;
 }
 
-.widthContainer{
+.widthContainerHeader{
     width: 80%;
+    /* height: 80%;
+
+    background: thistle; */
     
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: space-between;
+    justify-content: flex-start;
 }
