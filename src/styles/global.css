@@ -1,0 +1,66 @@
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root{
+    --purpleBackground: #F3EDFF;
+    --purpleShade1: #DDCDFF;
+    --purpleShade2: #C4AEF1;
+    --purpleButton: #7F43FE;
+    --purpleDark: #5200FD;
+    --pinkLight: #FFDAEC;
+    --yellowLight: #FFFBDA;
+    --greenLight: #DAFFDE;
+    --pinkStrong: #FE43CA;
+    --yellowStrong: #EFFE43;
+    --greenStrong: #43FE61;
+    --textSecondary: #929292;
+}
+
+body{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    background: var(--purpleBackground);
+}
+
+header{
+    width: 100vw;
+    height: 100vh;
+    
+    display: flex;
+    justify-content: center;
+
+    padding: 2rem 0;
+
+    position: relative;
+}
+
+header::before{
+    content: "";
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    background-image: url(../images/subBackgrounds/subBackground1.webp);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    filter: saturate(0);
+    z-index: 1;
+    opacity: 0.1;
+}
+
+.widthContainer{
+    width: 80%;
+    
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+}
