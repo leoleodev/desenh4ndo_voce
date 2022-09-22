@@ -8,7 +8,7 @@ export function HeaderBar(){
         <div className={Style.HeaderBarContainer}>
             {/* <img src="" alt="Logo marca Desenh4ndo Voce" /> */}
 
-            <h1>Desenh4ndo_voce</h1>
+            <h3>Desenh4ndo_voce</h3>
 
             <button className={Style.buttonMusical}>
                 <div>

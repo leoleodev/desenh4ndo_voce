@@ -19,6 +19,9 @@
     justify-content: center;
     align-items: center;
 }
+.buttonMusical:hover{
+    cursor: pointer;
+}
 
 .buttonMusical > div{
     width: 65%;
