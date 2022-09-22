@@ -18,13 +18,13 @@ function App() {
 
       <main>
 
-        <div className="widthContainer"></div>
+        <div className="widthContainerMain"></div>
 
       </main>
 
       <footer>
 
-        <div className="widthContainer"></div>
+        <div className="widthContainerFooter"></div>
 
       </footer>
 
