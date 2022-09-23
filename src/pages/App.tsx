@@ -18,9 +18,19 @@ function App() {
 
       <main>
         
-        <div className="widthContainerMain sectionMovie"></div>
-        <div className="widthContainerMain"></div>
-        <div className="widthContainerMain sectioTestimonial"></div>
+        <section className="section1">
+          <div className="widthContainerMain1">
+            
+          </div>
+        </section>
+
+        <section className="widthContainerMain"></section>
+
+        <section className="section2">
+          <div className="widthContainerMain">
+
+          </div>
+        </section>
 
       </main>
 
