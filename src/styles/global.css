@@ -73,7 +73,7 @@ header::before{
     background-position: center center;
     filter: saturate(0);
     z-index: -1;
-    opacity: 0.1;
+    opacity: 0.12;
 }
 
 .widthContainerHeader{
@@ -86,3 +86,5 @@ header::before{
 
     gap: 1rem;
 }
+
+

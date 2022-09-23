@@ -17,8 +17,10 @@ function App() {
       </header>
 
       <main>
-
+        
+        <div className="widthContainerMain sectionMovie"></div>
         <div className="widthContainerMain"></div>
+        <div className="widthContainerMain sectioTestimonial"></div>
 
       </main>
 

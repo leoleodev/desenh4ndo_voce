@@ -37,7 +37,7 @@ img{
     max-width: 50%;
 }
 
-@media(max-width: 500px){
+@media(max-width: 600px){
 
     .buttonMusical{
         width: 3rem;
