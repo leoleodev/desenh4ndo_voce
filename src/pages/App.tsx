@@ -1,5 +1,6 @@
 import { HeaderBar } from "../components/HeaderBar"
 import { HeaderMain } from "../components/HeaderMain"
+import { MovieSection } from "../components/MovieSection"
 
 function App() {
 
@@ -20,7 +21,7 @@ function App() {
         
         <section className="section1">
           <div className="widthContainerMain1">
-            
+            <MovieSection />
           </div>
         </section>
 
