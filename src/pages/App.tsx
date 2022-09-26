@@ -1,6 +1,7 @@
 import { HeaderBar } from "../components/HeaderBar"
 import { HeaderMain } from "../components/HeaderMain"
 import { MovieSection } from "../components/MovieSection"
+import { ServicesSection } from "../components/ServicesSection"
 
 function App() {
 
@@ -25,10 +26,12 @@ function App() {
           </div>
         </section>
 
-        <section className="widthContainerMain"></section>
-
         <section className="section2">
-          <div className="widthContainerMain">
+          <ServicesSection />
+        </section>
+
+        <section className="section3">
+          <div className="widthContainerMain3">
 
           </div>
         </section>
