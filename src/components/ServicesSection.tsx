@@ -21,7 +21,41 @@ export function ServicesSection(){
                 </button>
             </div>
 
-            <div className={Styles.cards}></div>
+            <div className={Styles.cards}>
+                <button>cards</button>
+                <button>cards</button>
+                <button>cards</button>
+                <button>cards</button>
+                <button>cards</button>
+                <button>cards</button>
+                <button>cards</button>
+                <button>cards</button>
+                <button>cards</button>
+                <button>cards</button>
+                <button>cards</button>
+                <button>cards</button>
+                <button>cards</button>
+                <button>cards</button>
+                <button>cards</button>
+                <button>cards</button>
+                <button>cards</button>
+                <button>cards</button>
+                <button>cards</button>
+                <button>cards</button>
+                <button>cards</button>
+                <button>cards</button>
+                <button>cards</button>
+                <button>cards</button>
+                <button>cards</button>
+                <button>cards</button>
+                <button>cards</button>
+                <button>cards</button>
+                <button>cards</button>
+                <button>cards</button>
+                <button>cards</button>
+                <button>cards</button>
+                <button>cards</button>
+            </div>
         </section>
     );
 }
