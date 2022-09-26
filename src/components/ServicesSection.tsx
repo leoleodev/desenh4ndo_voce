@@ -17,44 +17,12 @@ export function ServicesSection(){
                 </div>
                 <button className={Styles.filter}>
                     <img src={iconFilter} alt="Ícone de filtro" />
-                    <h3>Filtros</h3>
+                    Filtros
                 </button>
             </div>
 
             <div className={Styles.cards}>
-                <button>cards</button>
-                <button>cards</button>
-                <button>cards</button>
-                <button>cards</button>
-                <button>cards</button>
-                <button>cards</button>
-                <button>cards</button>
-                <button>cards</button>
-                <button>cards</button>
-                <button>cards</button>
-                <button>cards</button>
-                <button>cards</button>
-                <button>cards</button>
-                <button>cards</button>
-                <button>cards</button>
-                <button>cards</button>
-                <button>cards</button>
-                <button>cards</button>
-                <button>cards</button>
-                <button>cards</button>
-                <button>cards</button>
-                <button>cards</button>
-                <button>cards</button>
-                <button>cards</button>
-                <button>cards</button>
-                <button>cards</button>
-                <button>cards</button>
-                <button>cards</button>
-                <button>cards</button>
-                <button>cards</button>
-                <button>cards</button>
-                <button>cards</button>
-                <button>cards</button>
+                
             </div>
         </section>
     );
