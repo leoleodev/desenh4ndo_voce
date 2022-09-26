@@ -1,6 +1,6 @@
-import iconFilter from '../images/icons/filter.svg'
-
 import Styles from '../styles/modules/ServicesSection.module.css'
+import iconFilter from '../images/icons/filter.svg'
+import { Card } from './Card';
 
 export function ServicesSection(){
     return(
@@ -22,7 +22,12 @@ export function ServicesSection(){
             </div>
 
             <div className={Styles.cards}>
-                
+                <Card />
+                <Card />
+                <Card />
+                <Card />
+                <Card />
+                <Card />
             </div>
         </section>
     );

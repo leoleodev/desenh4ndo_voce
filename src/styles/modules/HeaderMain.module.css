@@ -32,7 +32,7 @@
     justify-content: center;
 }
 
-article{
+article.cardHeader{
     background: white;
 
     border-radius: 10px;
@@ -47,7 +47,7 @@ article{
     justify-content: center;
 }
 
-article > div{
+article.cardHeader > div{
     width: 100%;
     height: 100%;
 
@@ -59,7 +59,7 @@ article > div{
     border-right: 1px solid #d7d7d7;
 
 }
-article > div:last-child{
+article.cardHeader > div:last-child{
     border-right: none;
 }
 
@@ -175,7 +175,7 @@ button.buttonExplorer:hover::before{
         text-align: center;
     }
 
-    article{
+    article.cardHeader{
         width: 100%;
     }
 

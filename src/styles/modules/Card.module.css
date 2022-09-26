@@ -1,0 +1,69 @@
+
+article.cardContainer{
+    width: 100%;
+    height: auto;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    padding: 1.5rem;
+
+    background: white;
+    border-radius: 10px;
+    box-shadow: 3px 4px 8px rgba(0, 0, 0, 0.25);
+}
+
+.image{
+
+    width: 15rem;
+    height: 15rem;
+
+    border-radius: 50%;
+
+    mask-image: url(../../images/cardImages/polaroid.jpg);
+    -webkit-mask-image: url(../../images/cardImages/polaroid.jpg);
+
+
+}
+
+.title{
+    width: 100%;
+    margin: 1rem 0;
+}
+.title h3{
+    font-size: 1.5rem;
+    font-weight: 500;
+}
+.description{
+    width: 100%;
+    margin-bottom: 1rem;
+}
+
+.icons{
+    width: 100%;
+    height: auto;
+
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+
+    gap: 3rem;
+}
+
+.icons > div{
+    display: flex;
+    align-items: center;
+
+    gap: 0.5rem;
+}
+.icons > div h3{
+    font-weight: 500;
+    color: var(--purpleDark);
+}
+
+.icons > div img{
+
+    width: 2rem;
+
+}

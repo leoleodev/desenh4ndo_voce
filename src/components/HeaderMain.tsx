@@ -16,7 +16,7 @@ export function HeaderMain(){
                     ao clientes.
                 </p>
 
-                <article>
+                <article className={Style.cardHeader}>
                     <div className={Style.part1}>
                         <div className={Style.circle}>
                             <img src={IconPapelaria} alt="Icon papelaria" />
