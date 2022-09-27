@@ -1,6 +1,6 @@
 
 article.cardContainer{
-    width: 100%;
+    width: 20rem;
     height: auto;
 
     display: flex;
@@ -21,8 +21,8 @@ article.cardContainer{
 
     border-radius: 50%;
 
-    mask-image: url(../../images/cardImages/polaroid.jpg);
-    -webkit-mask-image: url(../../images/cardImages/polaroid.jpg);
+    mask-image: url(../../images/cardImages/productPolaroid.jpg);
+    -webkit-mask-image: url(../../images/cardImages/productPolaroid.jpg);
 
     mask-position: center center;
     -webkit-mask-position: center center;
@@ -33,10 +33,11 @@ article.cardContainer{
     mask-size: 100%;
     -webkit-mask-size: 100%;
 
-
     display: flex;
     align-items: center;
     justify-content: center;
+
+    background: teal;
 }
 
 .title{
@@ -76,4 +77,22 @@ article.cardContainer{
 
 .icons > div img{
     width: 2rem;
+}
+
+@media(max-width: 720px){
+
+    .image{
+        width: 13rem;
+        height: 13rem;
+    }
+
+}
+
+@media(max-width: 600px){
+
+    .image{
+        width: 10rem;
+        height: 10rem;
+    }
+
 }

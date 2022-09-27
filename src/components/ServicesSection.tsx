@@ -23,6 +23,8 @@ export function ServicesSection(){
 
             <div className={Styles.cards}>
                 <Card />
+                <Card />
+                <Card />
             </div>
         </section>
     );

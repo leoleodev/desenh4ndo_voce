@@ -67,12 +67,39 @@ button.filter:hover{
 
     padding: 1rem 0;
 
-    display: grid;
-    place-items: center center;
-    grid-template-columns: 1fr 1fr 1fr;
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    flex-wrap: wrap;
     gap: 1rem;
 
 }
 
+
+@media(max-width: 1080px){
+
+    
+}
+
+@media(max-width: 720px){
+
+    .info{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+
+        gap: 2rem;
+    }
+    .texts{
+        width: 100%;
+    }
+
+}
+
+@media(max-width: 600px){
+
+    
+}
 
 

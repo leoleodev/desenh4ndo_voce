@@ -1,5 +1,5 @@
 
-import ImagePolaroid from '../images/cardImages/polaroid.jpg'
+import ImagePolaroid from '../images/cardImages/productPolaroid.jpg'
 import IconOk from '../images/icons/ok.svg'
 import IconCoins from '../images/icons/coin.svg'
 
