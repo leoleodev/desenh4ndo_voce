@@ -37,6 +37,8 @@ button.filter{
     width: 9rem;
     height: 3rem;
 
+    position: relative;
+
     background: white;
 
     border: none;
@@ -51,15 +53,28 @@ button.filter{
     transition: 1s;
 
 }
+
+button.filter::after{
+    content: '';
+    width: 100%;
+    height: 2rem;
+    background: var(--purpleButton);
+    position: absolute;
+    z-index: 0;
+    top: -35px;
+    left: 0;
+    transition: 1s ease-in-out all;
+    border-radius: 0 0 300px 300px;
+}
+button.filter:hover::after{
+    top: 0;
+}
+
+
 button.filter img{
     transform: rotate(90deg);
 }
 
-button.filter:hover{
-    cursor: pointer;
-    border-bottom: 1px solid var(--purpleDark);
-    transform: scale(1.05);
-}
 
 .cards{
     width: 100%;
