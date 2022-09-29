@@ -1,3 +1,4 @@
+import { DepositionsSection } from "../components/DepositionsSection"
 import { FormSection } from "../components/FromSection"
 import { HeaderBar } from "../components/HeaderBar"
 import { HeaderMain } from "../components/HeaderMain"
@@ -34,7 +35,7 @@ function App() {
 
         <section className="section3">
           <div className="widthContainerMain3">
-
+            <DepositionsSection />
           </div>
         </section>
 

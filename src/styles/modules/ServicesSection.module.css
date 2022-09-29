@@ -36,14 +36,13 @@ button.filter{
 
     width: 9rem;
     height: 3rem;
-    color: #000;
+    color: var(--purpleButton);
 
     position: relative;
 
     background: transparent;
 
-    border: 1px solid var(--purpleButton);
-    border-radius: 5px;
+    border: 2px solid var(--purpleButton);
 
     display: flex;
     align-items: center;
@@ -53,25 +52,32 @@ button.filter{
 
     transition: 1s;
 
-    overflow: hidden;
-
     cursor: pointer;
 
 }
-button.filter::before{
+button.filter::before,
+button.filter::after{
     content: '';
     position: absolute;
-    background: var(--purpleButton);
-    width: 8px;
-    top: 0;
-    bottom: 0;
-    left: -32px;
-    transform: rotate(-32deg);
-    filter: blur(6px);
+    width: 2rem;
+    height: 2rem;
+    border: inherit;
+    transition: all .5s ease-in-out;
 }
-button.filter:hover::before{
-    left: calc(100% + 32px);
-    transition: 1s ease-in-out;
+button.filter::before{
+    top: -0.5rem;
+    left: -0.5rem;
+    border-width: 3px 0 0 3px;
+}
+button.filter::after{
+    bottom: -0.5rem;
+    right: -0.5rem;
+    border-width: 0 3px 3px 0;
+}
+button.filter:hover:before,
+button.filter:hover::after{
+    width: calc(100% + 0.76rem);
+    height: calc(100% + 0.76rem);
 }
 
 

@@ -1,6 +1,6 @@
 
 import Styles from '../styles/modules/DepositionsSection.module.css'
-
+import commentsIcon from '../images/icons/commentsIcon.svg'
 
 export function DepositionsSection(){
     return(
@@ -9,12 +9,20 @@ export function DepositionsSection(){
             <h2>Depoimentos e Estatisticas</h2>
 
             <div className={Styles.depositionContent}>
-                <img src="" alt="Icone de depoimentos" />
+                <img src={commentsIcon} alt="Icone de depoimentos" />
                 <div className={Styles.commentsArea}>
                     {/* card de comentário */}
                     {/* card de comentário */}
                     {/* card de comentário */}
+
+                    <button>qesfwegfikn</button>
+                    <button>qesfwegfikn</button>
+                    <button>qesfwegfikn</button>
+                    <button>qesfwegfikn</button>
+                    <button>qesfwegfikn</button>
+                    <button>qesfwegfikn</button>
                 </div>
+                    
             </div>
             <div className={Styles.complementaryArea}>
 

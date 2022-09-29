@@ -96,6 +96,7 @@ main{
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    gap: 3rem;
 }
 
 .section1{
@@ -151,11 +152,10 @@ main{
     width: 100vw;
     height: 130vh;
 
-    opacity: 0.3;
-
     position: relative;
 
     display: flex;
+    align-items: center;
     justify-content: center;
 }
 .section3::before{
@@ -169,13 +169,12 @@ main{
     background-size: cover;
     background-position: bottom bottom;
     z-index: -1;
-    opacity: 0.5;
+    opacity: 0.2;
 }
 .widthContainerMain3{
     width: 80%;
     height: 100%;
-    background: #43FE61;
-
+    
     display: flex;
     align-items: center;
     justify-content: center;

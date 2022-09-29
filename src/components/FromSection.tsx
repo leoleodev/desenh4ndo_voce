@@ -25,7 +25,7 @@ export function FormSection(){
                     <input type="tel" name="tel" id="tel" placeholder="Telefone" />
                     <textarea name="textArea" id="textArea" placeholder='Deixe-me uma mensagem'></textarea>
 
-                    <button type="button" id="buttonSubmit">ENVIAR</button>
+                    <button className={Styles.buttonSubmit} type="button" id="buttonSubmit">ENVIAR</button>
                 </form>
             </div>
         </section>
