@@ -1,3 +1,4 @@
+import { FormSection } from "../components/FromSection"
 import { HeaderBar } from "../components/HeaderBar"
 import { HeaderMain } from "../components/HeaderMain"
 import { MovieSection } from "../components/MovieSection"
@@ -28,6 +29,7 @@ function App() {
 
         <section className="section2">
           <ServicesSection />
+          <FormSection />
         </section>
 
         <section className="section3">
