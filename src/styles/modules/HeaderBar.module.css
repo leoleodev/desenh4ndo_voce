@@ -1,7 +1,6 @@
 
 .HeaderBarContainer{
     width: 100%;
-
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -17,12 +16,15 @@
     display: flex;
     justify-content: center;
     align-items: center;
+
+    position: relative;
 }
 .buttonMusical:hover{
     cursor: pointer;
 }
 
 .buttonMusical > div{
+    position: absolute;
     width: 65%;
     height: 65%;
     border-radius: 50%;
@@ -33,15 +35,15 @@
     align-items: center;
 }
 
-img{
-    max-width: 50%;
+.buttonMusical > div img{
+    max-width: 60%;
 }
 
 @media(max-width: 600px){
 
     .buttonMusical{
-        width: 3rem;
-        height: 3rem;
+        width: 3.5rem;
+        height: 3.5rem;
     }
 
 }

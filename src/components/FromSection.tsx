@@ -19,7 +19,8 @@ export function FormSection(){
                     Preencha o formulário e seja mais um membro da <span>PREMIUM LIST</span>
                 </h2>
                 <form>
-                    <input type="text" name="name" id="name" placeholder='Name'/>
+                    <input type="text" name="name" id="name" placeholder='Nome'/>
+                    <input type="text" name="lastName" id="lastName" placeholder='Sobre nome'/>
                     <input type="email" name="email" id="email" placeholder='Email'/>
                     <input type="tel" name="tel" id="tel" placeholder="Telefone" />
                     <textarea name="textArea" id="textArea" placeholder='Deixe-me uma mensagem'></textarea>
