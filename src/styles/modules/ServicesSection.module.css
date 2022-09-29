@@ -36,6 +36,7 @@ button.filter{
 
     width: 9rem;
     height: 3rem;
+    color: #000;
 
     position: relative;
 
@@ -119,7 +120,9 @@ button.filter img{
         justify-content: center;
         text-align: center;
     }
-
+    .texts h4{
+        text-align: justify;
+    }
 }
 
 @media(max-width: 600px){

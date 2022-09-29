@@ -61,6 +61,10 @@ h2{
         box-shadow: -10px 10px 0 var(--purpleButton);
     }
 
+    .text h4{
+        text-align: justify;
+    }
+
 }
 @media(max-width: 600px){
 

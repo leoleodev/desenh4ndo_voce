@@ -53,6 +53,7 @@ form{
     justify-content: center;
 
     gap: 2rem 0;
+    margin-bottom: 1rem;
     padding: 4rem 0 1rem 0;
 
     box-shadow: -10px 10px 0 var(--purpleButton);
@@ -80,6 +81,27 @@ textarea{
     padding: 0.5rem 1rem;
 }
 
+button{
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    width: 25%;
+    padding: 0.8rem 0;
+    font-weight: 600;
+    font-size: 1.1rem;
+    letter-spacing: 0.2rem;
+    
+    border-radius: 10px;
+    border: none;
+    background: var(--purpleButton);
+
+    color: white;
+
+
+}
+
 ::-webkit-input-placeholder  { 
     color:var(--textSecondary); 
     font-family: 'Poppins', sans-serif;
@@ -95,3 +117,43 @@ textarea:-moz-placeholder {
     font-family: 'Poppins', sans-serif;
     font-weight: 500;
  }
+
+ @media(max-width: 1080px){
+
+    .firstContent{
+        width: 100%;
+        text-align: justify;
+    }
+
+    .secondContent{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .secondContent h2{
+        text-align: center;
+    }
+
+}
+
+@media(max-width: 720px){
+
+    .sectionFormContainer{
+        margin-top: 5rem;
+    }
+
+    .secondContent h2{
+        margin-top: 1rem;
+        width: 100%;
+    }
+
+}
+
+@media(max-width: 600px){
+
+    button{
+        margin: 1rem 0;
+        width: 40%;
+    }
+
+}
