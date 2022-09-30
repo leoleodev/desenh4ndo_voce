@@ -155,9 +155,9 @@ textarea:-moz-placeholder {
 
 @media(max-width: 600px){
 
-    button{
+    button.buttonSubmit{
         margin: 1rem 0;
-        width: 40%;
+        width: 50%;
     }
 
 }

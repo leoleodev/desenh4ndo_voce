@@ -27,6 +27,9 @@ export function DepositionsSection(){
             <div className={Styles.complementaryArea}>
 
                 {/* card circuilo */}
+                <button>circle</button>
+                <button>circle</button>
+                <button>circle</button>
                 
             </div>
 

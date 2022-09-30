@@ -153,6 +153,7 @@ main{
     height: 130vh;
 
     position: relative;
+    margin-top: 3rem;
 
     display: flex;
     align-items: center;
@@ -169,7 +170,7 @@ main{
     background-size: cover;
     background-position: bottom bottom;
     z-index: -1;
-    opacity: 0.2;
+    opacity: 0.12;
 }
 .widthContainerMain3{
     width: 80%;
