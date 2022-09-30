@@ -14,36 +14,30 @@ h2{
     text-align: center;
 }
 
-.depositionContent{
-
+.depositionContent{    
     width: 100%;
     height: 90vh;
 
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: space-between;
-
-    gap: 1rem;
+    display: grid;
+    grid-template-columns: 1fr 1.5fr;
+    place-items: center;
 }
 .depositionContent img{
-    width: 40%;
+    width: 100%;
 }
+
 .commentsArea{
-    width: 50%;
+    width: 100%;
     height: 100%;
 
     overflow: auto;
 
     background: var(--purpleShade1);
-    border-radius: 15px;
+    
 
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    justify-content: flex-start;
+    display: block;
     gap: 1rem;
-    padding: 2rem 1.5rem;
+    padding: 1rem;
 }
 
 .complementaryArea{
@@ -61,13 +55,14 @@ h2{
     .depositionContent img{
         display: none;
     }
-    .commentsArea{
-        width: 100%;
+    .depositionContent{
+        grid-template-columns: 1fr;
     }
 
 }
 
 @media(max-width: 720px){
+
 
 }
 

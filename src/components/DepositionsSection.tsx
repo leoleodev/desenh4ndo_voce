@@ -17,6 +17,11 @@ export function DepositionsSection(){
                     <AvaliableCard />                   
                     <AvaliableCard />                   
                     <AvaliableCard />                   
+                    <AvaliableCard />                   
+                    <AvaliableCard />                   
+                    <AvaliableCard />                   
+                                    
+                                      
                 </div>
                     
             </div>
