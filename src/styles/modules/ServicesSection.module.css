@@ -104,7 +104,9 @@ button.filter img{
 
 @media(max-width: 1080px){
 
-    
+    .ServicesSectionContainer{
+        margin-top: 0;
+    }
 }
 
 @media(max-width: 720px){

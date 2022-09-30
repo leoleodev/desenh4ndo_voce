@@ -1,6 +1,7 @@
 
 import Styles from '../styles/modules/DepositionsSection.module.css'
 import commentsIcon from '../images/icons/commentsIcon.svg'
+import { AvaliableCard } from './AvaliableCard';
 
 export function DepositionsSection(){
     return(
@@ -11,16 +12,11 @@ export function DepositionsSection(){
             <div className={Styles.depositionContent}>
                 <img src={commentsIcon} alt="Icone de depoimentos" />
                 <div className={Styles.commentsArea}>
-                    {/* card de comentário */}
-                    {/* card de comentário */}
-                    {/* card de comentário */}
-
-                    <button>qesfwegfikn</button>
-                    <button>qesfwegfikn</button>
-                    <button>qesfwegfikn</button>
-                    <button>qesfwegfikn</button>
-                    <button>qesfwegfikn</button>
-                    <button>qesfwegfikn</button>
+                    <AvaliableCard />                   
+                    <AvaliableCard />                   
+                    <AvaliableCard />                   
+                    <AvaliableCard />                   
+                    <AvaliableCard />                   
                 </div>
                     
             </div>
