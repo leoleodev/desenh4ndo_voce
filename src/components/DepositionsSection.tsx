@@ -2,6 +2,7 @@
 import Styles from '../styles/modules/DepositionsSection.module.css'
 import commentsIcon from '../images/icons/commentsIcon.svg'
 import { AvaliableCard } from './AvaliableCard';
+import { ButtonCircle } from './ButtonCircle';
 
 export function DepositionsSection(){
     return(
@@ -14,23 +15,13 @@ export function DepositionsSection(){
                 <div className={Styles.commentsArea}>
                     <AvaliableCard />                   
                     <AvaliableCard />                   
-                    <AvaliableCard />                   
-                    <AvaliableCard />                   
-                    <AvaliableCard />                   
-                    <AvaliableCard />                   
-                    <AvaliableCard />                   
-                    <AvaliableCard />                   
-                                    
-                                      
+                    <AvaliableCard />                             
                 </div>
                     
             </div>
             <div className={Styles.complementaryArea}>
 
-                {/* card circuilo */}
-                <button>circle</button>
-                <button>circle</button>
-                <button>circle</button>
+                <ButtonCircle />
                 
             </div>
 
