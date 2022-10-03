@@ -6,7 +6,12 @@ export function ButtonCircle(){
         <section className={Styles.complemetaryAreaContainer}>
 
             <div className={Styles.circle}>
-                <div className={Styles.data}>100%</div>
+                <div className={Styles.data}>
+                    <svg>
+                        <circle cx={70} cy={70} r={70}></circle>
+                        <circle cx={70} cy={70} r={70}></circle>
+                    </svg>
+                </div>
             </div>
 
         </section>
