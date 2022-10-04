@@ -22,6 +22,8 @@ export function DepositionsSection(){
             <div className={Styles.complementaryArea}>
 
                 <ButtonCircle />
+                <ButtonCircle />
+                <ButtonCircle />
                 
             </div>
 
