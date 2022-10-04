@@ -2,51 +2,75 @@
 .complemetaryAreaContainer{
     width: 100%;
     height: 100%;
-    position: relative;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    background: turquoise;
-}
-
-.complemetaryAreaContainer .circle{
-    position: relative;
-    width: 100%;
-    height: 100%;
 
     display: flex;
-    align-items: center;
+    flex-direction: column;
+    gap: 1rem;
     justify-content: center;
-
+    align-items: center;
+    
+    color: #000;
 }
-.complemetaryAreaContainer .circle .data{
-    position: relative;
-    width: 100%;
-    height: 100%;
+
+.time{
     display: flex;
-    align-items: center;
-    justify-content: center;
 }
 
-.complemetaryAreaContainer .circle .data svg{
-
+.time .circle{
     position: relative;
-    width: 100%;
-    height: 100%;
-
+    width: 150px;
+    height: 150px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
-.complemetaryAreaContainer .circle .data svg circle{
+.time .circle svg{
+    position: relative;
+    width: 150px;
+    height: 150px;
+    transform: rotate(270deg);
+}
 
+.time .circle svg circle{
     width: 100%;
     height: 100%;
     fill: transparent;
-    stroke-width: 2;
-    stroke: #191919;
+    stroke: #101010;
+    stroke-width: 4;
     transform: translate(5px, 5px);
 }
-.complemetaryAreaContainer .circle .data svg circle:nth-child(2){
-    stroke: var(--yellowStrong);
+.time .circle svg circle:nth-child(2){
+    stroke: rgb(14, 161, 14);
     stroke-dasharray: 440;
-    stroke-dashoffset: calc(440-(440*85));
+    stroke-dashoffset: 44;
+
+}
+
+.time div{
+
+    position: absolute;
+    text-align: center;
+
+}
+
+.dot{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    z-index: 10;
+    display: flex;
+    justify-content: center;
+    transform: rotate(330deg);
+}
+.dot::before{
+    content: '';
+    position: absolute;
+    top: -2px;
+    width: 15px;
+    height: 15px;
+    background-color: rgb(5, 250, 5);
+    border-radius: 50%;
+    box-shadow: 0 0 20px rgb(5, 250, 5),
+    0 0 60px rgb(5, 250, 5);
 }
