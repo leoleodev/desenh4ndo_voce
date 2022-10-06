@@ -145,7 +145,6 @@ main{
     gap: 5rem;
 
     margin-bottom: 3rem;
-
 }
 
 .section3{
@@ -181,4 +180,11 @@ main{
     justify-content: center;
 
     gap: 1rem;
+}
+
+@media(max-width: 1080px){
+    .section3{
+        height: auto;
+        
+    }
 }
