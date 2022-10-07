@@ -1,4 +1,5 @@
 import { DepositionsSection } from "../components/DepositionsSection"
+import { Footer } from "../components/Footer"
 import { FormSection } from "../components/FromSection"
 import { HeaderBar } from "../components/HeaderBar"
 import { HeaderMain } from "../components/HeaderMain"
@@ -43,7 +44,9 @@ function App() {
 
       <footer>
 
-        <div className="widthContainerFooter"></div>
+        <div className="widthContainerFooter">
+          <Footer />
+        </div>
 
       </footer>
 
