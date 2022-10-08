@@ -1,9 +1,124 @@
 
 .footerContainer{
     width: 100%;
+    height: 100%;
+    padding: 2rem 0;
 
     display: flex;
     justify-content: space-between;
     align-items: center;
     gap: 1rem;
+}
+.footerContainer a{
+    text-decoration: none;
+    color: #000;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+
+    margin-bottom: 1rem;
+}
+
+.footerContainer > div{
+    width: calc((100%)/3);
+    height: 100%;
+    border-right: 2px solid #b9b9b9;
+}
+.footerContainer > div:last-child{
+    border-right: none;
+}
+
+.footerContainer h2{
+    margin-top: 2rem;
+}
+.footerContainer h4{
+    width: 90%;
+    text-align: justify;
+}
+
+.localization{
+    
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.socialMedia{
+    
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+}
+.socialMedia ul{
+    list-style: none;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+}
+.socialMedia ul li{
+    width: 100%;
+    height: 100%;
+    margin-bottom: 0.5rem;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    position: relative;
+}
+
+.socialMedia ul li a {
+    font-family: 'Poppins', sans-serif;
+    width: 4rem;
+    height: 2rem;
+
+}
+.socialMedia ul li a img{
+    max-width: 50%;
+}
+
+.schedules{
+    
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.schedules ul{
+    list-style: none;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+}
+.schedules ul li{
+    width: 100%;
+    height: 100%;
+    margin-bottom: 0.5rem;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    position: relative;
+}
+
+.schedules ul li a {
+    font-family: 'Poppins', sans-serif;
+    cursor: auto;
+    width: 100%;
+    height: 2rem;
+
+}
+.schedules ul li a img{
+    max-width: 100%;
 }
