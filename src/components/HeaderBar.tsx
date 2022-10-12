@@ -3,6 +3,8 @@ import Style from '../styles/modules/HeaderBar.module.css'
 import iconMusicalPlay from '../images/icons/musicPlay.svg'
 import iconMusicalStop from '../images/icons/musicStop.svg'
 
+import song1 from '../music/Yung_Kartz_-_02_-_Lethal.mp3'
+
 import { useState, useEffect } from 'react';
 
 export function HeaderBar(){
@@ -11,13 +13,9 @@ export function HeaderBar(){
 
     function verificationButtonMusic(){
 
-        setActive(true)
+        { isActive ? setActive(false) : setActive(true) }
 
-    }
-
-    useEffect( ()=>{
-        console.log(isActive)
-    }, [isActive] )
+    }    
 
     return(
 
@@ -30,19 +28,20 @@ export function HeaderBar(){
             type='button'
             className={Style.buttonMusical}
             onClick={verificationButtonMusic}
-            >
-                
+            >                
                 <div>
-                    <img src={iconMusicalPlay} alt="Button musical" />
+                    <audio autoPlay src={song1}></audio>
+                    <img src={iconMusicalStop} alt="Button musical" />
                 </div>
-            </button> : <button
+            </button>
+            : 
+            <button
             type='button'
             className={Style.buttonMusical}
             onClick={verificationButtonMusic}
-            >
-                
+            >                
                 <div>
-                    <img src={iconMusicalStop} alt="Button musical" />
+                    <img src={iconMusicalPlay} alt="Button musical" />
                 </div>
             </button> }
 
