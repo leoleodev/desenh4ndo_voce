@@ -1,6 +1,6 @@
 import { DepositionsSection } from "../components/DepositionsSection"
 import { Footer } from "../components/Footer"
-import { FormSection } from "../components/FromSection"
+import { FormSection } from "../components/FormSection"
 import { HeaderBar } from "../components/HeaderBar"
 import { HeaderMain } from "../components/HeaderMain"
 import { MovieSection } from "../components/MovieSection"
