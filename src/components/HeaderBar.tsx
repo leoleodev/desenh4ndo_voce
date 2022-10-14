@@ -5,16 +5,14 @@ import iconMusicalStop from '../images/icons/musicStop.svg'
 
 import song1 from '../music/Yung_Kartz_-_02_-_Lethal.mp3'
 
-import { useState, useEffect } from 'react';
+import { useState } from 'react';
 
 export function HeaderBar(){
 
     const[isActive, setActive] = useState(false);
 
     function verificationButtonMusic(){
-
         { isActive ? setActive(false) : setActive(true) }
-
     }    
 
     return(
@@ -24,7 +22,8 @@ export function HeaderBar(){
 
             <h3>Desenh4ndo_voce</h3>
 
-            { isActive ? <button
+            { isActive ? 
+            <button
             type='button'
             className={Style.buttonMusical}
             onClick={verificationButtonMusic}
@@ -43,9 +42,7 @@ export function HeaderBar(){
                 <div>
                     <img src={iconMusicalPlay} alt="Button musical" />
                 </div>
-            </button> }
-
-            
+            </button> }            
 
         </div>
 
