@@ -4,33 +4,36 @@ import iconMusicalPlay from '../images/icons/musicPlay.svg'
 import iconMusicalStop from '../images/icons/musicStop.svg'
 
 import song1 from '../music/songTeste.mp3'
+import song2 from '../music/songTeste2.mp3'
 
 import { useState } from 'react';
 
 export function HeaderBar(){
 
+    const playlist = [ 
+        song1,
+        song2,
+        
+     ]
+
     const[isActive, setActive] = useState(false);
+    let counter = 0;
 
     function verificationButtonMusic(){
-        { isActive ? 
-            (
+        { isActive ? (
                 setActive(false),
                 console.log("setActive = false")
             )
-            : 
-            (
+            : (
                 setActive(true),
                 console.log("setActive = True")
             ) 
         }
     }
 
-    function musicPause(){
-        console.log("music Pause")
-    }
-
     function musicEnded(){
-        return setActive(false);
+        counter =+ 1;
+        return counter;
     }
 
     return(
@@ -49,9 +52,8 @@ export function HeaderBar(){
                 <div>
                     <audio 
                     autoPlay 
-                    onPause={musicPause} 
                     onEnded={musicEnded} 
-                    src={song1}
+                    src={playlist[counter]}
                     ></audio>
                     <img src={iconMusicalStop} alt="Button musical" />
                 </div>
