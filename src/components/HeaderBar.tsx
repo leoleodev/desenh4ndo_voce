@@ -3,7 +3,7 @@ import Style from '../styles/modules/HeaderBar.module.css'
 import iconMusicalPlay from '../images/icons/musicPlay.svg'
 import iconMusicalStop from '../images/icons/musicStop.svg'
 
-import song1 from '../music/Yung_Kartz_-_02_-_Lethal.mp3'
+import song1 from '../music/songTeste.mp3'
 
 import { useState } from 'react';
 
@@ -13,7 +13,11 @@ export function HeaderBar(){
 
     function verificationButtonMusic(){
         { isActive ? setActive(false) : setActive(true) }
-    }    
+    }
+
+    function musicEnded(){
+        console.log("music ended")
+    }
 
     return(
 
@@ -29,7 +33,7 @@ export function HeaderBar(){
             onClick={verificationButtonMusic}
             >                
                 <div>
-                    <audio autoPlay src={song1}></audio>
+                    <audio autoPlay onEnded={musicEnded} src={song1}></audio>
                     <img src={iconMusicalStop} alt="Button musical" />
                 </div>
             </button>
