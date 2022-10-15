@@ -12,11 +12,25 @@ export function HeaderBar(){
     const[isActive, setActive] = useState(false);
 
     function verificationButtonMusic(){
-        { isActive ? setActive(false) : setActive(true) }
+        { isActive ? 
+            (
+                setActive(false),
+                console.log("setActive = false")
+            )
+            : 
+            (
+                setActive(true),
+                console.log("setActive = True")
+            ) 
+        }
+    }
+
+    function musicPause(){
+        console.log("music Pause")
     }
 
     function musicEnded(){
-        console.log("music ended")
+        return setActive(false);
     }
 
     return(
@@ -33,7 +47,12 @@ export function HeaderBar(){
             onClick={verificationButtonMusic}
             >                
                 <div>
-                    <audio autoPlay onEnded={musicEnded} src={song1}></audio>
+                    <audio 
+                    autoPlay 
+                    onPause={musicPause} 
+                    onEnded={musicEnded} 
+                    src={song1}
+                    ></audio>
                     <img src={iconMusicalStop} alt="Button musical" />
                 </div>
             </button>
