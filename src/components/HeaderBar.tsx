@@ -10,14 +10,16 @@ import { useState } from 'react';
 
 export function HeaderBar(){
 
+    const[isActive, setActive] = useState(false);
+    const[counter, setCounter] = useState(0);
+
     const playlist = [ 
         song1,
-        song2,
-        
+        song2,        
      ]
 
-    const[isActive, setActive] = useState(false);
-    let counter = 0;
+    console.log(playlist.length)
+    console.log(counter)
 
     function verificationButtonMusic(){
         { isActive ? (
@@ -32,12 +34,15 @@ export function HeaderBar(){
     }
 
     function musicEnded(){
-        counter =+ 1;
-        return counter;
+        if( counter === playlist.length){
+            setActive(false)
+            console.log("playlist ended")
+        }else{
+            setCounter(counter + 1)
+        }        
     }
 
     return(
-
         <div className={Style.HeaderBarContainer}>
             {/* <img src="" alt="Logo marca Desenh4ndo Voce" /> */}
 
@@ -70,6 +75,5 @@ export function HeaderBar(){
             </button> }            
 
         </div>
-
     );
 }
