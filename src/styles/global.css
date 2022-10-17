@@ -7,14 +7,14 @@
 }
 
 :root{
-    --purpleBackground: #F3EDFF;
-    --purpleShade1: #DDCDFF;
-    --purpleShade2: #C4AEF1;
-    --purpleButton: #7F43FE;
-    --purpleDark: #5200FD;
-    --pinkLight: #FFDAEC;
-    --yellowLight: #FFFBDA;
-    --greenLight: #DAFFDE;
+    --purpleBackground: #fceff3;
+    --purpleShade1: #FFCDDC;
+    --purpleShade2: #F1AEC2;
+    --purpleButton: #FE437B;
+    --purpleDark: #FD004C;
+    --pinkLight: #FFD1D1;
+    --yellowLight: #fcf5bf;
+    --greenLight: #D2F2FF;
     --pinkStrong: #FE43CA;
     --yellowStrong: #EFFE43;
     --greenStrong: #43FE61;
