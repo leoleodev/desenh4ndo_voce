@@ -12,14 +12,14 @@ export function HeaderBar(){
 
     const[isActive, setActive] = useState(false);
     const[counter, setCounter] = useState(0);
+    let numberRandom = 0;
 
     const playlist = [ 
         song1,
-        song2,        
+        song2,               
      ]
-
-    console.log(playlist.length)
-    console.log(counter)
+     
+     handleId(numberRandom);
 
     function verificationButtonMusic(){
         { isActive ? (
@@ -34,12 +34,22 @@ export function HeaderBar(){
     }
 
     function musicEnded(){
-        if( counter === playlist.length){
+        if(counter === playlist.length){
             setActive(false)
             console.log("playlist ended")
         }else{
-            setCounter(counter + 1)
+
+            numberRandom = Math.round(
+                Math.random()*(playlist.length - 0)+0
+                );
+
+            setCounter(numberRandom);
         }        
+    }
+
+    function handleId(id){
+        id = Math.round(Math.random()*(playlist.length - 0)+0);
+        return id;
     }
 
     return(
