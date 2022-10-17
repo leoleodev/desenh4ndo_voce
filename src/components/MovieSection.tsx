@@ -1,8 +1,8 @@
-import Style from '../styles/modules/MovieSection.module.css'
+import Styles from '../styles/modules/MovieSection.module.css'
 
 export function MovieSection(){
     return(
-        <section className={Style.MovieContainer}>
+        <section className={Styles.MovieContainer}>
 
             <iframe
                 width="560" 
@@ -15,7 +15,7 @@ export function MovieSection(){
             >                
             </iframe>
 
-            <div className={Style.text}>
+            <div className={Styles.text}>
                 <h2>Um pouco mais sobre mim!</h2>
 
                 <h4>

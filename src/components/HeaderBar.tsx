@@ -1,5 +1,5 @@
 
-import Style from '../styles/modules/HeaderBar.module.css'
+import Styles from '../styles/modules/HeaderBar.module.css'
 import iconMusicalPlay from '../images/icons/musicPlay.svg'
 import iconMusicalStop from '../images/icons/musicStop.svg'
 
@@ -47,7 +47,7 @@ export function HeaderBar(){
     }
 
     return(
-        <div onLoad={componentLoad} className={Style.HeaderBarContainer}>
+        <div onLoad={componentLoad} className={Styles.HeaderBarContainer}>
             {/* <img src="" alt="Logo marca Desenh4ndo Voce" /> */}
 
             <h3>Desenh4ndo_voce</h3>
@@ -55,7 +55,7 @@ export function HeaderBar(){
             { isActive ? 
             <button
             type='button'
-            className={Style.buttonMusical}
+            className={Styles.buttonMusical}
             onClick={verificationButtonMusic}
             >                
                 <div>
@@ -70,7 +70,7 @@ export function HeaderBar(){
             : 
             <button
             type='button'
-            className={Style.buttonMusical}
+            className={Styles.buttonMusical}
             onClick={verificationButtonMusic}
             >                
                 <div>
