@@ -19,32 +19,31 @@ export function HeaderBar(){
      ]
 
      function componentLoad(){
-        handleIdMusic();        
+        handleIdMusic();      
      }
 
      function handleIdMusic(){
-        setCounter(Math.round(Math.random()*(playlist.length - 0)+0));
+        let min = 0;
+        let max = playlist.length;
+
+        min = Math.ceil(min);
+        max = Math.floor(max);
+        setCounter(Math.floor(Math.random() * (max - min) + min));
+        console.log(`handleIdMusic actived ${counter}`);    
      }
 
     function verificationButtonMusic(){
         { isActive ? (
-                setActive(false),
-                console.log("setActive = false")
+                setActive(false)
             )
             : (
-                setActive(true),
-                console.log("setActive = True")
+                setActive(true)
             ) 
         }
     }
 
     function musicEnded(){
-        if(counter === playlist.length){
-            setActive(false)
-            console.log("playlist ended")
-        }else{
-            handleIdMusic();
-        }        
+        handleIdMusic();       
     }
 
     return(
