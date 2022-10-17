@@ -12,14 +12,19 @@ export function HeaderBar(){
 
     const[isActive, setActive] = useState(false);
     const[counter, setCounter] = useState(0);
-    let numberRandom = 0;
-
+    
     const playlist = [ 
         song1,
-        song2,               
+        song2,                       
      ]
-     
-     handleId(numberRandom);
+
+     function componentLoad(){
+        handleIdMusic();        
+     }
+
+     function handleIdMusic(){
+        setCounter(Math.round(Math.random()*(playlist.length - 0)+0));
+     }
 
     function verificationButtonMusic(){
         { isActive ? (
@@ -38,22 +43,12 @@ export function HeaderBar(){
             setActive(false)
             console.log("playlist ended")
         }else{
-
-            numberRandom = Math.round(
-                Math.random()*(playlist.length - 0)+0
-                );
-
-            setCounter(numberRandom);
+            handleIdMusic();
         }        
     }
 
-    function handleId(id){
-        id = Math.round(Math.random()*(playlist.length - 0)+0);
-        return id;
-    }
-
     return(
-        <div className={Style.HeaderBarContainer}>
+        <div onLoad={componentLoad} className={Style.HeaderBarContainer}>
             {/* <img src="" alt="Logo marca Desenh4ndo Voce" /> */}
 
             <h3>Desenh4ndo_voce</h3>
