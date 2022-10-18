@@ -5,6 +5,8 @@ import IconPapelaria from '../images/icons/papelaria.svg'
 import IconDoceria from '../images/icons/doceria.svg'
 import IconGrafica from '../images/icons/grafica.svg'
 
+import imageTest from '../images/cardImages/productPolaroid.jpg'
+
 export function HeaderMain(){
     return(
         <div className={Styles.HeaderMainCantainer}>
@@ -44,6 +46,8 @@ export function HeaderMain(){
             <section className={Styles.section2}>
 
                 <div className={Styles.carrosel}>
+
+                    <img src={imageTest} alt="" />
                     
                 </div>
 
