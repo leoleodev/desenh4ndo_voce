@@ -45,6 +45,12 @@ export function HeaderBar(){
     function musicEnded(){
         handleIdMusic();       
     }
+    function mouseEnter(){
+
+        // Feature in progress
+
+        console.log("mouse enter");
+    }
 
     return(
         <div onLoad={componentLoad} className={Styles.HeaderBarContainer}>
@@ -72,6 +78,7 @@ export function HeaderBar(){
             type='button'
             className={Styles.buttonMusical}
             onClick={verificationButtonMusic}
+            onMouseEnter={mouseEnter}
             >                
                 <div>
                     <img src={iconMusicalPlay} alt="Button musical" />

@@ -130,21 +130,6 @@ button.buttonExplorer:hover::before{
     justify-content: center;
 }
 
-.carrosel{
-    width: 30em;
-    height: 30rem;
-
-    background: white;
-
-    overflow: hidden;
-
-    display: flex;
-    align-items: center;
-    justify-content: center;
-
-    border-radius: 50%;
-}
-
 .section2 img{
     max-width: 100%;
 }

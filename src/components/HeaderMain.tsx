@@ -6,6 +6,8 @@ import IconGrafica from '../images/icons/grafica.svg'
 import imageTest from '../images/cardImages/productPolaroid.jpg'
 
 import { useState } from 'react';
+import { Slider } from '../styles/styled/slider'
+
 import Carousel from 'react-elastic-carousel';
 
 export function HeaderMain(){
@@ -46,11 +48,11 @@ export function HeaderMain(){
             </section>
             <section className={Styles.section2}>
 
-                <div className={Styles.carrosel}>
+                <Slider>
 
                     <img src={imageTest} alt="" />
-                    
-                </div>
+                
+                </Slider>
 
             </section>
         </div>
