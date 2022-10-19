@@ -1,11 +1,12 @@
-
 import Styles from '../styles/modules/HeaderMain.module.css'
 
 import IconPapelaria from '../images/icons/papelaria.svg'
 import IconDoceria from '../images/icons/doceria.svg'
 import IconGrafica from '../images/icons/grafica.svg'
-
 import imageTest from '../images/cardImages/productPolaroid.jpg'
+
+import { useState } from 'react';
+import Carousel from 'react-elastic-carousel';
 
 export function HeaderMain(){
     return(
