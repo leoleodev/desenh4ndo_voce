@@ -7,10 +7,13 @@ import imageTest from '../images/cardImages/productPolaroid.jpg'
 
 import { useState } from 'react';
 import { Slider } from '../styles/styled/slider'
-
 import Carousel from 'react-elastic-carousel';
 
+
 export function HeaderMain(){
+
+    
+
     return(
         <div className={Styles.HeaderMainCantainer}>
             <section className={Styles.section1}>
@@ -49,7 +52,9 @@ export function HeaderMain(){
             <section className={Styles.section2}>
 
                 <Slider>
-                    <img src={imageTest} alt="" />
+
+                
+                    
                 </Slider>
 
             </section>

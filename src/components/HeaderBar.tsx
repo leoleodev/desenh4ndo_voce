@@ -49,7 +49,7 @@ export function HeaderBar(){
 
         // Feature in progress
 
-        console.log("mouse enter");
+        // console.log("mouse enter");
     }
 
     return(
