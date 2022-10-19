@@ -130,10 +130,6 @@ button.buttonExplorer:hover::before{
     justify-content: center;
 }
 
-.section2 img{
-    max-width: 100%;
-}
-
 @media(max-width: 1080px){
 
     .HeaderMainCantainer{

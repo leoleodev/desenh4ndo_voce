@@ -49,9 +49,7 @@ export function HeaderMain(){
             <section className={Styles.section2}>
 
                 <Slider>
-
                     <img src={imageTest} alt="" />
-                
                 </Slider>
 
             </section>
