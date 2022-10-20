@@ -10,6 +10,7 @@ import { SliderContainer } from '../styles/styled/slider'
 import Carousel from 'react-elastic-carousel';
 import { Slider } from './Slider'
 
+
 export function HeaderMain(){    
 
     return(
@@ -50,19 +51,19 @@ export function HeaderMain(){
             <section className={Styles.section2}>
                 <SliderContainer>
 
-                    <Carousel
+                    <Carousel 
                         isRTL={true}
                         pagination={false} 
                         showArrows={false}
                         enableAutoPlay={true}
-                        transitionMs={2000}
-                        autoPlaySpeed={5000}
-                        
+                        transitionMs={1000}
+                        autoPlaySpeed={1000}                        
                     >
 
                         <Slider img={IconDoceria}/>
                         <Slider img={imageTest}/>
                         <Slider img={IconPapelaria}/>
+                        
 
                     </Carousel>
                     
