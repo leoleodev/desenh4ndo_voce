@@ -1,9 +1,9 @@
 import Styled from 'styled-components';
 
-export const Slider = Styled.div`
+export const SliderContainer = Styled.div`
     width: 30em;
     height: 30rem;
-    background: #fff;
+    
     display: flex;
     align-items: center;
     justify-content: center;
@@ -21,6 +21,10 @@ export const Slider = Styled.div`
     @media(max-width: 600px){    
         width: 12em;
         height: 12rem;
+    }
+
+    Slider{
+        width: 10px;
     }
 
 `;

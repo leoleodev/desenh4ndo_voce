@@ -6,13 +6,12 @@ import IconGrafica from '../images/icons/grafica.svg'
 import imageTest from '../images/cardImages/productPolaroid.jpg'
 
 import { useState } from 'react';
-import { Slider } from '../styles/styled/slider'
+import { SliderContainer } from '../styles/styled/slider'
 import Carousel from 'react-elastic-carousel';
+import { Slider } from './Slider'
 
 
-export function HeaderMain(){
-
-    
+export function HeaderMain(){    
 
     return(
         <div className={Styles.HeaderMainCantainer}>
@@ -51,9 +50,15 @@ export function HeaderMain(){
             </section>
             <section className={Styles.section2}>
 
-                <Slider>
+                <SliderContainer>
+
+                    <Carousel isRTL>
+                        <Slider img={imageTest}/>
+                        <Slider img={imageTest}/>
+                        <Slider img={imageTest}/>
+                    </Carousel>
                     
-                </Slider>
+                </SliderContainer>
 
                 
 
