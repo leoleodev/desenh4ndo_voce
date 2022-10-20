@@ -22,9 +22,7 @@ interface SliderProps{
 export function Slider(props: SliderProps){
     return(
         <ContainerImage>
-
             <img src={props.img} alt="imagem do slide" />
-
         </ContainerImage>
     );
 }
