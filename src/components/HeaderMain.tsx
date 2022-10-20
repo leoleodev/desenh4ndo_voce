@@ -52,10 +52,10 @@ export function HeaderMain(){
             <section className={Styles.section2}>
 
                 <Slider>
-
-                
                     
                 </Slider>
+
+                
 
             </section>
         </div>

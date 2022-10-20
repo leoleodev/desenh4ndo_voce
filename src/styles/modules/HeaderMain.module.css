@@ -140,18 +140,10 @@ button.buttonExplorer:hover::before{
         display: flex;
         align-items: center;
     }
-    .carrosel{
-        width: 20em;
-        height: 20rem;
-    }
 
 }
 @media(max-width: 720px){
 
-    .carrosel{
-        width: 15em;
-        height: 15rem;
-    }
     .subTitleHeader{
         text-align: center;
     }
@@ -165,11 +157,6 @@ button.buttonExplorer:hover::before{
 
     article.cardHeader{
         width: 100%;
-    }
-
-    .carrosel{
-        width: 12em;
-        height: 12rem;
     }
 
 }
