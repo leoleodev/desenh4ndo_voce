@@ -17,14 +17,6 @@ export const SliderContainer = Styled.div`
     @media(max-width: 720px){    
         width: 15em;
         height: 15rem;
-    }
-    @media(max-width: 600px){    
-        width: 12em;
-        height: 12rem;
-    }
-
-    Slider{
-        width: 10px;
-    }
+    }   
 
 `;

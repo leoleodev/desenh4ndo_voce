@@ -2,13 +2,17 @@ import styled from 'styled-components';
 
 export const ContainerImage = styled.div`
     width: 100%;
-    height: 200px;
+    height: 100%;
     
-    font-size: 30px;
-    margin: 0 20px;
+    margin: 0 10px;
     display: flex;
     justify-content: center;
     align-items: center;
+
+    img{
+        width: 100%;
+    }
+
 `;
 
 interface SliderProps{
