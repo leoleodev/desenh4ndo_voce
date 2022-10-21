@@ -1,5 +1,7 @@
 import Styles from '../styles/modules/HeaderMain.module.css'
 
+import React from 'react'
+
 import IconPapelaria from '../images/icons/papelaria.svg'
 import IconDoceria from '../images/icons/doceria.svg'
 import IconGrafica from '../images/icons/grafica.svg'
@@ -12,6 +14,9 @@ import { Slider } from './Slider'
 
 
 export function HeaderMain(){
+
+    const carouselRef = React.useRef(null); // declare at state level
+    let resetTimeout; //decalre at state level
 
     return(
         <div className={Styles.HeaderMainCantainer}>
