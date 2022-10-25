@@ -1,17 +1,34 @@
 import Styles from '../styles/modules/HeaderMain.module.css'
-
-import React from 'react'
+import Styled from 'styled-components';
 
 import IconPapelaria from '../images/icons/papelaria.svg'
 import IconDoceria from '../images/icons/doceria.svg'
 import IconGrafica from '../images/icons/grafica.svg'
 import imageTest from '../images/cardImages/productPolaroid.jpg'
 
-import { useState } from 'react';
-import { SliderContainer } from '../styles/styled/slider'
 import Carousel from 'react-elastic-carousel';
 import { Slider } from './Slider'
 
+export const SliderContainer = Styled.div`
+    width: 30em;
+    height: 30rem;
+    
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+
+    @media(max-width: 1080px){    
+        width: 20em;
+        height: 20rem; 
+
+    }
+    @media(max-width: 720px){    
+        width: 15em;
+        height: 15rem;
+    }   
+
+`;
 
 export function HeaderMain(){
 
