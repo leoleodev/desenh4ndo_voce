@@ -70,19 +70,12 @@ export function HeaderMain(){
             <section className={Styles.section2}>
                 <SliderContainer>
 
-                    <Carousel 
-                        isRTL={true}
-                        pagination={true} 
-                        showArrows={false}
-                        enableAutoPlay={true}
-                        transitionMs={2000}
-                        autoPlaySpeed={5000} 
-                    >
+                    
                         <Slider img={IconDoceria}/>
                         <Slider img={imageTest}/>
                         <Slider img={IconPapelaria}/>                        
 
-                    </Carousel>
+                    
                     
                 </SliderContainer>  
             </section>
