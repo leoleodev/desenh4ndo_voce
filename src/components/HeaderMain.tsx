@@ -15,9 +15,6 @@ import { Slider } from './Slider'
 
 export function HeaderMain(){
 
-    const carouselRef = React.useRef(null); // declare at state level
-    let resetTimeout; //decalre at state level
-
     return(
         <div className={Styles.HeaderMainCantainer}>
             <section className={Styles.section1}>
