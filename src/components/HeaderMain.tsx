@@ -4,9 +4,9 @@ import Styled from 'styled-components';
 import IconPapelaria from '../images/icons/papelaria.svg'
 import IconDoceria from '../images/icons/doceria.svg'
 import IconGrafica from '../images/icons/grafica.svg'
-import imageTest from '../images/cardImages/productPolaroid.jpg'
 
-import Carousel from 'react-elastic-carousel';
+import { useState } from 'react';
+
 import { Slider } from './Slider'
 
 export const SliderContainer = Styled.div`
@@ -31,6 +31,14 @@ export const SliderContainer = Styled.div`
 `;
 
 export function HeaderMain(){
+
+    const slides = [
+        IconPapelaria,
+        IconDoceria,
+        IconGrafica,
+    ]
+
+    const [slideShow, setSlideShow] = useState(0);
 
     return(
         <div className={Styles.HeaderMainCantainer}>
@@ -69,13 +77,8 @@ export function HeaderMain(){
             </section>
             <section className={Styles.section2}>
                 <SliderContainer>
-
                     
-                        <Slider img={IconDoceria}/>
-                        <Slider img={imageTest}/>
-                        <Slider img={IconPapelaria}/>                        
-
-                    
+                        <Slider img={slides[slideShow]}/> 
                     
                 </SliderContainer>  
             </section>
