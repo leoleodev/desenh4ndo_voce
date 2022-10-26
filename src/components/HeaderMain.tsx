@@ -5,9 +5,9 @@ import IconPapelaria from '../images/icons/papelaria.svg'
 import IconDoceria from '../images/icons/doceria.svg'
 import IconGrafica from '../images/icons/grafica.svg'
 
-import { useState } from 'react';
-
-import { Slider } from './Slider'
+import { Swiper, SwiperSlide } from 'swiper/react';
+import { SliderItem } from './SliderItem';
+// import { SliderItem } from './SliderItem';
 
 export const SliderContainer = Styled.div`
     width: 30em;
@@ -16,7 +16,7 @@ export const SliderContainer = Styled.div`
     display: flex;
     align-items: center;
     justify-content: center;
-    border-radius: 50%;
+    
 
     @media(max-width: 1080px){    
         width: 20em;
@@ -31,14 +31,6 @@ export const SliderContainer = Styled.div`
 `;
 
 export function HeaderMain(){
-
-    const slides = [
-        IconPapelaria,
-        IconDoceria,
-        IconGrafica,
-    ]
-
-    const [slideShow, setSlideShow] = useState(0);
 
     return(
         <div className={Styles.HeaderMainCantainer}>
@@ -77,8 +69,8 @@ export function HeaderMain(){
             </section>
             <section className={Styles.section2}>
                 <SliderContainer>
-                    
-                        <Slider img={slides[slideShow]}/> 
+
+                    <SliderItem img={IconGrafica} />
                     
                 </SliderContainer>  
             </section>

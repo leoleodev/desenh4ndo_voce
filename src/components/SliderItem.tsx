@@ -19,7 +19,7 @@ interface SliderProps{
     img: string;
 }
 
-export function Slider(props: SliderProps){
+export function SliderItem(props: SliderProps){
     return(
         <ContainerImage>
             <img src={props.img} alt="imagem do slide" />
