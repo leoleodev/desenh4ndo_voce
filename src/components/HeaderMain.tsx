@@ -5,9 +5,13 @@ import IconPapelaria from '../images/icons/papelaria.svg'
 import IconDoceria from '../images/icons/doceria.svg'
 import IconGrafica from '../images/icons/grafica.svg'
 
+// Import Swiper React components
 import { Swiper, SwiperSlide } from 'swiper/react';
+
+// Import Swiper styles
+import 'swiper/css';
+
 import { SliderItem } from './SliderItem';
-// import { SliderItem } from './SliderItem';
 
 export const SliderContainer = Styled.div`
     width: 30em;
@@ -70,7 +74,17 @@ export function HeaderMain(){
             <section className={Styles.section2}>
                 <SliderContainer>
 
-                    <SliderItem img={IconGrafica} />
+                    <Swiper>
+                        <SwiperSlide>
+                            <SliderItem img={IconDoceria} />
+                        </SwiperSlide>
+                        <SwiperSlide>
+                            <SliderItem img={IconPapelaria} />
+                        </SwiperSlide>
+                        <SwiperSlide>
+                            <SliderItem img={IconGrafica} />
+                        </SwiperSlide>
+                    </Swiper>
                     
                 </SliderContainer>  
             </section>
