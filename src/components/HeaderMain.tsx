@@ -39,12 +39,10 @@ export function HeaderMain(){
         pagination: {
             clickable: true
         },
-        autoplay:{
-            delay: 1000,
-            disableOnInteraction: false,
-        },
-        
-        
+        autoplay: {
+            delay: 2500,
+        }
+          
     }
 
     return(
