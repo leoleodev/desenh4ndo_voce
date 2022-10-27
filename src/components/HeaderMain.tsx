@@ -34,7 +34,8 @@ export function HeaderMain(){
 
     const settings: SwiperProps = {
         spaceBetween : 50,
-        navigation: true,
+        navigation: false ,
+        loop:true,
         pagination: {
             clickable: true
         },
