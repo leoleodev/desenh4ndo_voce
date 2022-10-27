@@ -34,11 +34,17 @@ export function HeaderMain(){
 
     const settings: SwiperProps = {
         spaceBetween : 50,
-        navigation: false ,
-        loop:true,
+        slidesPerView: 1,
+        loop: true,
         pagination: {
             clickable: true
         },
+        autoplay:{
+            delay: 1000,
+            disableOnInteraction: false,
+        },
+        
+        
     }
 
     return(
