@@ -5,12 +5,8 @@ import IconPapelaria from '../images/icons/papelaria.svg'
 import IconDoceria from '../images/icons/doceria.svg'
 import IconGrafica from '../images/icons/grafica.svg'
 
-// Import Swiper React components
-import { Swiper, SwiperSlide } from 'swiper/react';
-
-// Import Swiper styles
-import 'swiper/css';
-
+import Slider from './Slider';
+import { Swiper, SwiperProps , SwiperSlide } from 'swiper/react';
 import { SliderItem } from './SliderItem';
 
 export const SliderContainer = Styled.div`
@@ -35,6 +31,10 @@ export const SliderContainer = Styled.div`
 `;
 
 export function HeaderMain(){
+
+    const settings = {
+        spaceBetween : 50,
+    }
 
     return(
         <div className={Styles.HeaderMainCantainer}>
@@ -74,7 +74,7 @@ export function HeaderMain(){
             <section className={Styles.section2}>
                 <SliderContainer>
 
-                    <Swiper>
+                    <Slider settings={settings}>
                         <SwiperSlide>
                             <SliderItem img={IconDoceria} />
                         </SwiperSlide>
@@ -84,7 +84,7 @@ export function HeaderMain(){
                         <SwiperSlide>
                             <SliderItem img={IconGrafica} />
                         </SwiperSlide>
-                    </Swiper>
+                    </Slider>
                     
                 </SliderContainer>  
             </section>

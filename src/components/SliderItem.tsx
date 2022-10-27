@@ -4,7 +4,6 @@ export const ContainerImage = styled.div`
     width: 100%;
     height: 100%;
     
-    margin: 0 10px;
     display: flex;
     justify-content: center;
     align-items: center;
