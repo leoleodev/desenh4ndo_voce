@@ -32,8 +32,12 @@ export const SliderContainer = Styled.div`
 
 export function HeaderMain(){
 
-    const settings = {
+    const settings: SwiperProps = {
         spaceBetween : 50,
+        navigation: true,
+        pagination: {
+            clickable: true
+        },
     }
 
     return(
