@@ -5,9 +5,15 @@ import IconPapelaria from '../images/icons/papelaria.svg'
 import IconDoceria from '../images/icons/doceria.svg'
 import IconGrafica from '../images/icons/grafica.svg'
 
-import Slider from './Slider';
-import { Swiper, SwiperProps , SwiperSlide } from 'swiper/react';
 import { SliderItem } from './SliderItem';
+
+import { Swiper, SwiperSlide } from 'swiper/react';
+import { Pagination, Autoplay } from 'swiper';
+
+import 'swiper/css';
+import 'swiper/css/pagination';
+import 'swiper/css/autoplay';
+import '../styles/slider.css';
 
 export const SliderContainer = Styled.div`
     width: 30em;
@@ -15,8 +21,7 @@ export const SliderContainer = Styled.div`
     
     display: flex;
     align-items: center;
-    justify-content: center;
-    
+    justify-content: center;    
 
     @media(max-width: 1080px){    
         width: 20em;
@@ -31,19 +36,6 @@ export const SliderContainer = Styled.div`
 `;
 
 export function HeaderMain(){
-
-    const settings: SwiperProps = {
-        spaceBetween : 50,
-        slidesPerView: 1,
-        loop: true,
-        pagination: {
-            clickable: true
-        },
-        autoplay: {
-            delay: 2500,
-        }
-          
-    }
 
     return(
         <div className={Styles.HeaderMainCantainer}>
@@ -82,8 +74,14 @@ export function HeaderMain(){
             </section>
             <section className={Styles.section2}>
                 <SliderContainer>
-
-                    <Slider settings={settings}>
+                    <Swiper
+                    modules={[Pagination, Autoplay]}
+                    spaceBetween={50}
+                    slidesPerView={1}
+                    loop={true}
+                    pagination={{clickable:true}}
+                    autoplay={{delay:1000, disableOnInteraction: false}}
+                    >
                         <SwiperSlide>
                             <SliderItem img={IconDoceria} />
                         </SwiperSlide>
@@ -93,7 +91,7 @@ export function HeaderMain(){
                         <SwiperSlide>
                             <SliderItem img={IconGrafica} />
                         </SwiperSlide>
-                    </Slider>
+                    </Swiper>
                     
                 </SliderContainer>  
             </section>
