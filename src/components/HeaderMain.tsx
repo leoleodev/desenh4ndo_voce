@@ -33,13 +33,12 @@ export const SliderContainer = Styled.div`
     @media(max-width: 720px){    
         width: 15em;
         height: 15rem;
-    }   
-
+    }
 `;
 
 export function HeaderMain(){
 
-    const swiperRef = React.useRef<SwiperCore>();
+    // const swiperRef = React.useRef<SwiperCore>();
 
     return(
         <div className={Styles.HeaderMainCantainer}>
