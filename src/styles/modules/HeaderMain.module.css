@@ -152,6 +152,7 @@ button.buttonExplorer:hover::before{
 @media(max-width: 600px){
 
     h1{
+        
         text-align: center;
     }
 

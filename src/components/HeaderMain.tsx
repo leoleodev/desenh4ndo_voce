@@ -8,7 +8,9 @@ import IconGrafica from '../images/icons/grafica.svg'
 import { SliderItem } from './SliderItem';
 
 import { Swiper, SwiperSlide } from 'swiper/react';
-import { Pagination, Autoplay } from 'swiper';
+import SwiperCore, { Autoplay, Pagination } from "swiper";
+SwiperCore.use([Pagination, Autoplay]);
+import React from "react";
 
 import 'swiper/css';
 import 'swiper/css/pagination';
@@ -36,6 +38,8 @@ export const SliderContainer = Styled.div`
 `;
 
 export function HeaderMain(){
+
+    const swiperRef = React.useRef<SwiperCore>();
 
     return(
         <div className={Styles.HeaderMainCantainer}>
@@ -80,7 +84,7 @@ export function HeaderMain(){
                     slidesPerView={1}
                     loop={true}
                     pagination={{clickable:true}}
-                    autoplay={{delay:1000, disableOnInteraction: false}}
+                    autoplay={{delay:2500, disableOnInteraction: false}}
                     >
                         <SwiperSlide>
                             <SliderItem img={IconDoceria} />
